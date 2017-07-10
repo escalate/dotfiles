@@ -1,0 +1,35 @@
+# Visual Bell deaktivieren
+vbell off
+
+# Detach bei Absturz aktivieren
+autodetach on
+
+# Splash Screen deaktivieren
+startup_message off
+
+# Scrollback History erhoehen
+defscrollback 10000
+
+# Statusbar konfigurieren
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= kg}%H %{= kw}%-Lw%{= rW}%n%f %t%{-}%+Lw %= %{= ky}%l %{=b kC}%Y-%m-%d %c:%s"
+
+# Scrollbar fuer Terminal aktivieren
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+# Tastenkombination zum Scrollen Shift+PgUp/PgDn
+bindkey -m "^[[5;2~" stuff ^b
+bindkey -m "^[[6;2~" stuff ^f
+
+# Tastenkombination F11 und F12 anstelle F1 und F2 zum vor- und zurueckwechseln von Fenstern
+bindkey -k F1 prev
+bindkey -k F2 next
+
+# Fenster Index bei 1 anstelle 0 beginnen
+bind c screen 1
+bind ^c screen 1
+screen 1
+
+# Tastenkombination Fenster 10 auswaehlen aendern
+bind 0 select 10

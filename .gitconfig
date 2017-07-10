@@ -1,0 +1,19 @@
+[core]
+    editor = vim
+[color]
+    ui = auto
+[alias]
+    st = status
+    ll = log --all --decorate=full --graph --abbrev-commit
+    ls = log --all --decorate=full --pretty=oneline --graph --abbrev-commit
+    lx = log --all --pretty=oneline --graph --abbrev-commit
+    what = whatchanged
+    co = checkout
+    ci = commit
+    cp = cherry-pick
+    st = status
+[merge]
+    tool = vimdiff
+    renameLimit = 10000
+[include]
+    path = .gitconfig.local
