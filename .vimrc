@@ -48,6 +48,9 @@ set smartindent
 
 " Suche startet direkt beim Tippen des Suchwortes
 set incsearch
-"
+
 " Suchergebnisse hervorheben
 set hlsearch
+
+" F2-Taste fuer Paste-Mode-Schalter belegen
+set pastetoggle=<F2>
