@@ -14,7 +14,7 @@ POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
 # Powerlevel9k: Linke Prompt-Anzeige konfigurieren
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs )
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon virtualenv dir dir_writable vcs)
 
 # Powerlevel9k: Erstes Zeichen im Verzeichnispfad auslassen
 POWERLEVEL9K_DIR_OMIT_FIRST_CHARACTER=true
