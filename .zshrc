@@ -39,5 +39,12 @@ source $ZSH/oh-my-zsh.sh
 # dircolors: Verzeichnis-Farbschema solarized-dark setzen
 eval `dircolors ~/.dircolors`
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# rvm: Pfad setzen
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# pyenv: Pfad setzen
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# pyenv: Shell-Umgebung konfigurieren
+eval "$(pyenv init -)"
