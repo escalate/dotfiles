@@ -27,9 +27,6 @@ filetype plugin on
 " Dateitypbasierten Einzug aktivieren
 filetype indent on
 
-" Zeilennummern anzeigen
-set number
-
 " Wild Menu aktivieren
 set wildmenu
 
