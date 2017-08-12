@@ -6,8 +6,6 @@ syntax on
 
 " Farbschema solarized-dark fuer Vim setzen
 set background=dark
-let g:solarized_termcolors=256
-set t_Co=256
 colorscheme solarized
 
 " Farbschema solarized-dark fuer Airline setzen
