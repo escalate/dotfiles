@@ -48,3 +48,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 # pyenv: Shell-Umgebung konfigurieren
 eval "$(pyenv init -)"
+
+# zsh: extendedglob - fix problem with pattern matching sign ^
+unsetopt nomatch
