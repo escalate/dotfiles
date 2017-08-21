@@ -15,5 +15,3 @@
 [merge]
     tool = vimdiff
     renameLimit = 10000
-[include]
-    path = .gitconfig.local
