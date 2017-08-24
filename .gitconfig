@@ -1,17 +1,25 @@
 [core]
     editor = vim
+
 [color]
     ui = auto
+
 [alias]
+    # Shortcuts for long command names
     st = status
-    ll = log --all --decorate=full --graph --abbrev-commit
-    ls = log --all --decorate=full --pretty=oneline --graph --abbrev-commit
-    lx = log --all --pretty=oneline --graph --abbrev-commit
     what = whatchanged
     co = checkout
     ci = commit
     cp = cherry-pick
-    st = status
+    # Show verbose output about tags, branches or remotes
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+    # List contributors with number of commits
+    contributors = shortlog --summary --numbered
+
 [merge]
     tool = vimdiff
-    renameLimit = 10000
+
+[push]
+    default = simple
