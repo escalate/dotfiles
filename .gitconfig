@@ -23,3 +23,9 @@
 
 [push]
     default = simple
+
+[includeIf "gitdir:~/Dokumente/workspace/private/"]
+    path = ~/secrets/.gitconfig.private
+
+[includeIf "gitdir:~/Dokumente/workspace/work/"]
+    path = ~/secrets/.gitconfig.work
