@@ -49,5 +49,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 # pyenv: Shell-Umgebung konfigurieren
 eval "$(pyenv init -)"
 
+# adr-tools: Pfad setzen
+export ADR_TOOLS_BIN_PATH="/usr/local/bin/adr-tools/src"
+export PATH="$ADR_TOOLS_BIN_PATH:$PATH"
+
 # zsh: extendedglob - fix problem with pattern matching sign ^
 unsetopt nomatch
