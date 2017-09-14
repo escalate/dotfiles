@@ -1,5 +1,6 @@
 [core]
     editor = vim
+    hooksPath = ~/secrets/.githooks
 
 [color]
     ui = auto
