@@ -58,3 +58,8 @@ export PATH="$ADR_TOOLS_BIN_PATH:$PATH"
 
 # zsh: extendedglob - fix problem with pattern matching sign ^
 unsetopt nomatch
+
+# function: download my first 200 public Github repositories
+github-download-all-repos() {
+    curl -s https://api.github.com/users/escalate/repos\?per_page\=200 | perl -ne 'print "$1\n" if (/"clone_url": "([^"]+)/)' | xargs -n 1 git clone
+}
