@@ -66,5 +66,5 @@ github-download-all-repos() {
 
 # function: lint last commit message
 git-commitlint() {
-    git log --pretty=%B -1 | docker run --interactive --rm 6c087e0e2120
+    git log --pretty=%B -1 | docker run --interactive --rm commitlint:latest
 }
