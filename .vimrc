@@ -22,21 +22,15 @@ set noshowmode
 " Dateitypbasierte Plugins aktivieren
 filetype plugin on
 
-" Dateitypbasierten Einzug aktivieren
-filetype indent on
-
 " Wild Menu aktivieren
 set wildmenu
 
 " Leerzeichen anstelle von Tabs schreiben
 set expandtab
 
-" 1 Tab == 4 Leerzeichen
-set tabstop=4
-set shiftwidth=4
-
-" Automatischer Einzug
-set autoindent
+" 1 Tab == 2 Leerzeichen
+set tabstop=2
+set shiftwidth=2
 
 " Intelligenter Einzug
 set smartindent
