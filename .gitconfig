@@ -1,6 +1,6 @@
 [core]
     editor = vim
-    hooksPath = ~/secrets/.githooks
+    hooksPath = ~/.githooks
 
 [color]
     ui = auto
@@ -26,7 +26,7 @@
     default = simple
 
 [include]
-    path = ~/secrets/.gitconfig/private
+    path = ~/.gitincludes/private
 
 [includeIf "gitdir:~/Dokumente/workspace/work/"]
-    path = ~/secrets/.gitconfig/work
+    path = ~/.gitincludes/work
