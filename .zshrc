@@ -1,9 +1,6 @@
 # oh-my-zsh: Installationspfad setzen
 export ZSH=$HOME/.oh-my-zsh
 
-# term: Angepasste TERM-Info-Konfiguration setzen (tic ~/terminfo.src)
-export TERMINFO=$HOME/.terminfo
-
 # oh-my-zsh: Name des Themas setzen
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
