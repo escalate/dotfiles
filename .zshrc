@@ -32,7 +32,7 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # oh-my-zsh: Plugin Liste
-plugins=(git proxy)
+plugins=(git proxy kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
