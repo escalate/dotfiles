@@ -89,12 +89,3 @@ shellcheck() {
         echo "ERROR: No file \"$1\" found"
     fi
 }
-
-# function: hadolint
-hadolint() {
-    if [ -f "$1" ]; then
-        docker run --rm --interactive hadolint/hadolint:latest < $1
-    else
-        echo "ERROR: No file \"$1\" found"
-    fi
-}
