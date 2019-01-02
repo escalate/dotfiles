@@ -80,3 +80,12 @@ gpb() {
         echo $out
     fi
 }
+
+# function: shellcheck
+shellcheck() {
+    if [ -f "$1" ]; then
+        docker run --rm --volume="${PWD}:/mnt" koalaman/shellcheck:stable $1
+    else
+        echo "ERROR: No file \"$1\" found"
+    fi
+}
