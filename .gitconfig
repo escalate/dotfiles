@@ -30,3 +30,6 @@
 
 [includeIf "gitdir:~/Dokumente/workspace/work/"]
     path = ~/.gitincludes/work
+
+[includeIf "gitdir:~/Documents/workspace/work/"]
+    path = ~/.gitincludes/work
