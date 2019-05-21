@@ -53,6 +53,10 @@ eval "$(pyenv init -)"
 export ADR_TOOLS_BIN_PATH="/usr/local/bin/adr-tools/src"
 export PATH="$ADR_TOOLS_BIN_PATH:$PATH"
 
+# golang: Pfad setzen
+export GOLANG_BIN_PATH="$(go env GOPATH)/bin"
+export PATH="$GOLANG_BIN_PATH:$PATH"
+
 # zsh: extendedglob - fix problem with pattern matching sign ^
 unsetopt nomatch
 
