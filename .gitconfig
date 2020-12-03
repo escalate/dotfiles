@@ -1,35 +1,35 @@
 [core]
-    editor = vim
-    hooksPath = ~/.githooks
+	editor = vim
+	hooksPath = ~/.githooks
 
 [color]
-    ui = auto
+	ui = auto
 
 [alias]
-    # Shortcuts for long command names
-    st = status
-    what = whatchanged
-    co = checkout
-    ci = commit
-    cp = cherry-pick
-    # Show verbose output about tags, branches or remotes
-    tags = tag -l
-    branches = branch -a
-    remotes = remote -v
-    # List contributors with number of commits
-    contributors = shortlog --summary --numbered
+	# Shortcuts for long command names
+	st = status
+	what = whatchanged
+	co = checkout
+	ci = commit
+	cp = cherry-pick
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+	# List contributors with number of commits
+	contributors = shortlog --summary --numbered
 
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 
 [push]
-    default = simple
+	default = simple
 
 [include]
-    path = ~/.gitincludes/private
+	path = ~/.gitincludes/private
 
 [includeIf "gitdir:~/Dokumente/workspace/work/"]
-    path = ~/.gitincludes/work
+	path = ~/.gitincludes/work
 
 [includeIf "gitdir:~/Documents/workspace/work/"]
-    path = ~/.gitincludes/work
+	path = ~/.gitincludes/work
