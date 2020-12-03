@@ -76,10 +76,7 @@ gpb() {
     echo $out | grep -q "git push"
     if [ $? -eq 0 ]; then
         cmd="`echo $out | grep git | perl -pe 's/.*(git push --set-upstream.+)/$1/'`"
-        read "response?$cmd [y/n] "
-        if [[ "$response" =~ ^[yY]$ ]]; then
-            eval $cmd
-        fi
+        eval $cmd
     else
         echo $out
     fi
