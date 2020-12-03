@@ -90,3 +90,14 @@ shellcheck() {
         echo "ERROR: No file \"$1\" found"
     fi
 }
+
+phpmyadmin() {
+    echo "Starting phpMyAdmin on http://localhost:8080"
+    docker run \
+      --rm \
+      --init \
+      --env=PMA_HOST=${PMA_HOST} \
+      --env=PMA_ARBITRARY=1 \
+      --publish=8080:80 \
+      phpmyadmin/phpmyadmin:latest
+}
