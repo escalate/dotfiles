@@ -94,6 +94,7 @@ shellcheck() {
     fi
 }
 
+# function: phpMyAdmin
 phpmyadmin() {
     echo "Starting phpMyAdmin on http://localhost:8080"
     docker run \
