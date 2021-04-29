@@ -68,11 +68,6 @@ github-download-all-repos() {
     curl -s https://api.github.com/users/escalate/repos\?per_page\=200 | perl -ne 'print "$1\n" if (/"clone_url": "([^"]+)/)' | xargs -n 1 git clone
 }
 
-# function: lint last commit message
-git-commitlint() {
-    git log --pretty=%B -1 | docker run --interactive --rm commitlint:latest
-}
-
 # function: git push with automated upstream tracking
 gpb() {
     out="`git push 2>&1`"
