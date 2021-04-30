@@ -1,6 +1,5 @@
 [core]
 	editor = vim
-	hooksPath = ~/.githooks
 	compression = 0
 
 [color]

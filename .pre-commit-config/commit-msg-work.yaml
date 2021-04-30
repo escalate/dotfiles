@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v4.1.0
+    hooks:
+      - id: commitlint
+        args:
+          - "--config=/home/boernerf/.pre-commit-config/commitlint.config.eslint.js"
+        additional_dependencies:
+          - commitlint-config-eslint
