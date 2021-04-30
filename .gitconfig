@@ -33,3 +33,6 @@
 
 [includeIf "gitdir:~/Documents/workspace/work/"]
 	path = ~/.gitincludes/work
+
+[http]
+	postBuffer = 52428800
