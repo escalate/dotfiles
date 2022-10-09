@@ -39,9 +39,6 @@ source $ZSH/oh-my-zsh.sh
 # dircolors: Verzeichnis-Farbschema solarized-dark setzen
 eval `dircolors ~/.dircolors`
 
-# rvm: Pfad setzen
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # pyenv: Pfad setzen
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
