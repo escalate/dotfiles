@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # oh-my-zsh: Name des Themas setzen
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Powerlevel9k: Schriftart-Quelle setzen
 POWERLEVEL9K_MODE='nerdfont-complete'
