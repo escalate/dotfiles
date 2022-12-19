@@ -1,6 +1,3 @@
-" Pathogen Plugin Manager laden
-execute pathogen#infect()
-
 " Syntax Highlighting aktivieren
 syntax on
 
