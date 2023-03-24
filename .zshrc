@@ -55,18 +55,6 @@ github-download-all-repos() {
     curl -s https://api.github.com/users/escalate/repos\?per_page\=200 | perl -ne 'print "$1\n" if (/"clone_url": "([^"]+)/)' | xargs -n 1 git clone
 }
 
-# function: git push with automated upstream tracking
-gpb() {
-    out="`git push 2>&1`"
-    echo $out | grep -q "git push"
-    if [ $? -eq 0 ]; then
-        cmd="`echo $out | grep git | perl -pe 's/.*(git push --set-upstream.+)/$1/'`"
-        eval $cmd
-    else
-        echo $out
-    fi
-}
-
 # function: phpMyAdmin
 phpmyadmin() {
     echo "Starting phpMyAdmin on http://localhost:8080"
