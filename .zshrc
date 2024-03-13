@@ -39,10 +39,6 @@ source $ZSH/oh-my-zsh.sh
 # dircolors: Verzeichnis-Farbschema solarized-dark setzen
 eval `dircolors ~/.dircolors`
 
-# adr-tools: Pfad setzen
-export ADR_TOOLS_BIN_PATH="/usr/local/bin/adr-tools/src"
-export PATH="$ADR_TOOLS_BIN_PATH:$PATH"
-
 # golang: Pfad setzen
 export GOLANG_BIN_PATH="$(go env GOPATH)/bin"
 export PATH="$GOLANG_BIN_PATH:$PATH"
