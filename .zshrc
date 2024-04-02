@@ -62,3 +62,11 @@ phpmyadmin() {
       --publish=8080:80 \
       phpmyadmin/phpmyadmin:latest
 }
+
+# function: yt-dlp for YT Music
+yt-music() {
+    yt-dlp \
+      --extract-audio \
+      --audio-format best \
+      "$1"
+}
