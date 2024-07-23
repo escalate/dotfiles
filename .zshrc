@@ -66,7 +66,17 @@ phpmyadmin() {
 # function: yt-dlp for YT Music
 yt-music() {
     yt-dlp \
+      --cookies-from-browser firefox \
       --extract-audio \
       --audio-format best \
+      "$1"
+}
+
+yt-music-mp3() {
+    yt-dlp \
+      --cookies-from-browser firefox \
+      --extract-audio \
+      --audio-format mp3 \
+      --audio-quality 0 \
       "$1"
 }
