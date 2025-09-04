@@ -28,10 +28,7 @@
 [include]
 	path = ~/.gitincludes/private
 
-[includeIf "gitdir:~/Dokumente/workspace/work/"]
-	path = ~/.gitincludes/work
-
-[includeIf "gitdir:~/Documents/workspace/work/"]
+[includeIf "gitdir:~/workspace/work/"]
 	path = ~/.gitincludes/work
 
 [http]
