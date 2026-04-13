@@ -1,11 +1,11 @@
 # oh-my-zsh: Installationspfad setzen
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="${HOME}/.oh-my-zsh"
 
 # oh-my-zsh: Name des Themas setzen
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Powerlevel9k: Schriftart-Quelle setzen
-POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_MODE="nerdfont-complete"
 
 # Powerlevel9k: Rechte Prompt-Anzeige deaktivieren
 POWERLEVEL9K_DISABLE_RPROMPT=true
@@ -34,14 +34,14 @@ HIST_STAMPS="yyyy-mm-dd"
 # oh-my-zsh: Plugin Liste
 plugins=(git gitfast proxy kubectl vagrant poetry)
 
-source $ZSH/oh-my-zsh.sh
+source "${ZSH}/oh-my-zsh.sh"
 
 # dircolors: Verzeichnis-Farbschema solarized-dark setzen
 eval `dircolors ~/.dircolors`
 
 # golang: Pfad setzen
 export GOLANG_BIN_PATH="$(go env GOPATH)/bin"
-export PATH="$GOLANG_BIN_PATH:$PATH"
+export PATH="${GOLANG_BIN_PATH}:${PATH}"
 
 # zsh: extendedglob - fix problem with pattern matching sign ^
 unsetopt nomatch
