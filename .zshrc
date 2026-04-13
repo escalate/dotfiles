@@ -43,6 +43,15 @@ eval `dircolors ~/.dircolors`
 export GOLANG_BIN_PATH="$(go env GOPATH)/bin"
 export PATH="${GOLANG_BIN_PATH}:${PATH}"
 
+# neovim: Pfad setzen
+export PATH="/opt/nvim-linux-x86_64/bin:${PATH}"
+
+# neovim: Aliases
+alias nvimdiff="nvim -d"
+alias vim="nvim"
+alias vimdiff="nvim -d"
+alias view="nvim -R"
+
 # zsh: extendedglob - fix problem with pattern matching sign ^
 unsetopt nomatch
 
