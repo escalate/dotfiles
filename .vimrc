@@ -40,3 +40,6 @@ set hlsearch
 
 " F2-Taste fuer Paste-Mode-Schalter belegen
 set pastetoggle=<F2>
+
+" Bugfix https://github.com/vim/vim/issues/8973#issuecomment-940228346
+set t_ut=y
